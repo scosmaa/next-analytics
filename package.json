@@ -1,5 +1,5 @@
 {
-  "name": "with-google-analytics",
+  "name": "next-analytics",
   "scripts": {
     "dev": "next",
     "build": "next build",
