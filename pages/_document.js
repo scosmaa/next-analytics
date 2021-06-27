@@ -1,12 +1,13 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
-import { GA_TRACKING_ID } from '../lib/gtag'
+import { GA_TRACKING_ID, FB_VERIFICATION_ID } from '../lib/gtag'
 
 export default class MyDocument extends Document {
   render() {
     return (
       <Html>
         <Head>
+          <meta name="facebook-domain-verification" content={`${FB_VERIFICATION_ID}`} />
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
             dangerouslySetInnerHTML={{
